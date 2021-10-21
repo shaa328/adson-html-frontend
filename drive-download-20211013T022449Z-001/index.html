@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup/Signin</title>
+</head>
+<body>
+    <a href="sigup.html">Signup</a>
+    <a href="sigin.html">Signin</a>
+    <h1>Message to us</h1>
+    <form action="http://localhost:4000/message" method="post">
+    <input type="text" name="name" placeholder="type name">
+    <input type="text" name="email" placeholder="type email">
+    <input type="text" name="subject" placeholder="type subject">
+    <input type="text" name="message" placeholder="type message">
+    <button type="submit">submit</button>
+    </form>
+    <h1>Upload Your Project</h1>
+    <form action="http://localhost:4000/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="upload">
+        <button type="submit">Upload</button>
+    </form>
+
+    
+</body>
+</html>
